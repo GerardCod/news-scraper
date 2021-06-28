@@ -1,0 +1,4 @@
+Links = //div[@class="col-7 pl-0 pr-3"]/h2/a[@class="economiaSect" or @class="empresasSect" or @class="ocioSect" or @class="globoeconomiaSect" or @class="analistas-opinionSect"]/@href
+Titulo = //div[@class="mb-auto"]/h2/span/text()
+Resumen = //div[@class="lead"]/p/text()
+Contenido = //div[@class="html-content"]/p/text()
