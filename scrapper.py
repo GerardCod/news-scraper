@@ -17,7 +17,7 @@ def parse_home():
       home = response.content.decode('utf-8')
       parsed = html.fromstring(home)
       link_to_new = parsed.xpath(XPATH_LINK_TO_ARTICLE)
-      today = datetime.date.today().strftime("%d-%m-%Y")
+      today = datetime.datetime(2021, 6, 28).strftime('%d-%m-%Y')
       dirname = f'gaguilar-{today}'
       if not os.path.isdir(dirname):
         os.mkdir(dirname)
